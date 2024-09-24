@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>RegistrApp</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,9 +10,15 @@
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>RegistrApp </strong>
-    <p>Empezar <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <form>
+    <div class="form-group">
+      <label for="ejemail">Correo Electronico</label>
+      <input type="email" class="form-control" id="ejemail" aria-describedby="emailHelp" placeholder="Ingrese correo Electronico">
+    </div>
+    <div class="form-group">
+      <label for="ejcontraseña">Contraseña</label>
+      <input type="password" class="form-control" id="ejcontraseña" placeholder="Ingrese Contraseña" min="5" max="20">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </ion-content>
